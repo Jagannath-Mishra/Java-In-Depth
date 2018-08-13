@@ -1,7 +1,7 @@
 # Java In-Depth: Become a Complete Java Engineer! @ Udemy
 Comprehensive Java programming course integrated with design principles, best practices, demos & instructor-led project.
 
-What Will I Learn?
+# What Will I Learn?
 
 •	Get an in-depth understanding of core & advanced Java
 
@@ -19,11 +19,9 @@ What Will I Learn?
 
 •	Get a solid understanding of functional-style programming using Java 8 constructs like lambdas & streams
 
-Curriculum For This Course
-Expand All
- 
+# Curriculum For This Course
 
-Course Introduction
+# Course Introduction
 3 Lectures19:01
 
 Java: A High-level Overview
@@ -93,7 +91,7 @@ Bonus Lessons
 3 Lectures04:06
 
 
-Requirements
+# Requirements
 •	Familiarity in using computers
 •	The 3 P's: Passion, Patience, and Perseverance. Please note it is not a crash course!!
 
