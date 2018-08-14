@@ -39,3 +39,19 @@ Similarly: -=, +=, /= and %=
    - e.g. 5 + 9 - 3 +( 2 * 5 )  // 5 + 9 will added first then subsctracted from 3 then added to 2 \* 5 
 3. Use paranthesis to change the order of evaluation.
    - e.g. ((5 + (9 - 3)) + ( 2 * 5 ) // Here we are forcing operator to evaluate by our order.
+   
+### Operand Promotion Rules
+1. Operands smaller then int are promoted to int.  (byte, short and char  are promoted to int )
+      - e.g. 127 (byte) + 1 (byte) --> 127 (int) + 1 (int) --> 128 (int)
+      - e.g. 'a' (char) + 'b' (char) --> 97 (UTF-16) + 98 (UTF-16) --> 195 (int)
+### Same-Type Operations Rules
+If both operands are of same type that is int, long, float or double, then operaions are carried in the type and evaluated to a value of that type
+
+e.g. 5 + 6 = 11
+
+1/2 = 0 , _actually it should be 0.5_
+
+### Mixed-Type Operations Rules
+If both operands are belongs to differnet type, then smaller type is automatically promoted to larger type.
+   ##### Order of Promotion _int --> long --> float --> double _
+   e.g. 1/2 or 1.0/2 --> (automatically converted ) 1.0/2.0 ---> 0.5 
