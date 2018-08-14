@@ -53,5 +53,7 @@ e.g. 5 + 6 = 11
 
 ### Mixed-Type Operations Rules
 If both operands are belongs to differnet type, then smaller type is automatically promoted to larger type.
-   ##### Order of Promotion _int --> long --> float --> double _
+   ##### Order of Promotion _ int --> long --> float --> double _
    e.g. 1/2 or 1.0/2 --> (automatically converted ) 1.0/2.0 ---> 0.5 
+   e.g. char + float ---> ( char will automatically coverted to int ) int + float --> (again int will further converted into float ) float + float ---> float
+   e.g. 9/5*20.1 ---> (9/5)* 20.1 --> 1*20.1  ----> 1.0 *20.1 ---> 20.1 
