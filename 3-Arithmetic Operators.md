@@ -19,3 +19,23 @@
    - int y = x++; // y = 5, x = 4 ( Y is first assing the current value of x (5) and its assign to y as 6 )
    - int y = ++x; // y = 4, x = 4 ( Y is first decrement the current value of x (4) and its assign to y as 4 and x as 4 )
 ###### Note: Arithematic operator are only applicabe for premitive numaric types. That is they accept all premitive type except boolean.
+
+## Compound Arithematic Assignment Operators
+ This provides a shot syntax for assigning the result of the arithematic variable to some variable. 
+ 
+ e.g.  x = x + 5;
+ 
+ Rewrite :  x += 5;
+ 
+ =+ will be treated as only assignment operation.
+
+Similarly: -=, +=, /= and %=
+
+## Arithmetic Operation Rules
+### Opertor Precedence
+1. Multiplicative operators ( \*, /, %) have higher preedence over additive operators (+,-).
+   - e.g. 5 + 9 + 3 +( 2 * 5 )
+2. Operators in same group are evaluated left to right.
+   - e.g. 5 + 9 - 3 +( 2 * 5 )  // 5 + 9 will added first then subsctracted from 3 then added to 2 \* 5 
+3. Use paranthesis to change the order of evaluation.
+   - e.g. ((5 + (9 - 3)) + ( 2 * 5 ) // Here we are forcing operator to evaluate by our order.
