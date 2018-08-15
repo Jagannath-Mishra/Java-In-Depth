@@ -64,3 +64,15 @@
 > So as a result **11111**000 00000000 00000000 00000110 
 
 ( **As bit shifted to right newly value filled with 1 at higher-order bits position**) 
+\
+## Where these Operators are used.
+1. Compiler optimizations : Replace multiplication & division.
+2. Hashtable, e.g. Java HashMap's hash function.
+3. Embedded programming.
+4. Games programming.
+5. Systems with no floating-point support.
+
+## Compound Bit Shift Assignmetn
+1. operand1 = operand1 << operand2  __Compound Assignment__ : **operand1 <<= operand2**
+2. operand1 = operand1 >>> operand2  __Compound Assignment__ : **operand1 >>>= operand2**
+3. operand1 = operand1 >> operand2  __Compound Assignment__ : **operand1 >>= operand2**
