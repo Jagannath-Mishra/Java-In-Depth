@@ -15,7 +15,7 @@
 1. Its a binary operator and its left shifts left operand by the number of bit specified on right. 
 2. Let x = 6, y = 1
 > Result (x << y) --> 12
-3. Inserts zeroes at lower-order bits position.  00000000 00000000 00000000 0000 0 1 1 0 **<--- lower order bit position**
+3. Inserts zeroes at lower-order bits position.  00000000 00000000 00000000 0000 __0 1 1 0__ **<--- lower order bit position**
 4. Same as multiplication by powers of 2
     e.g. 6 << 1 ---> 6 * 2^1 --> 12
          8 << 2 ---> 8 * 2^3 --> 32
@@ -31,7 +31,7 @@
 1. Its a binary operator and its right shifts left operand by the number of bit specified on right. 
 2. Let x = 12, y = 1
 > Result (x >>> y) --> 6
-3. Inserts zeroes at higher-order bits position. **Higher order bit position -->** 00000000 00000000 00000000 0000 0 1 1 0
+3. Inserts zeroes at higher-order bits position. **Higher order bit position -->** __00000000__ 00000000 00000000 0000 0 1 1 0
 4. Same as division by powers of 2
     e.g. 12 >>> 1 ---> 12 / 2^1 --> 6
          8 >>> 2 ---> 8 / 2^2 --> 2
@@ -51,8 +51,9 @@
 1. Its a binary operator and its right shifts left operand by the number of bit specified on right. 
 2. Same as Unsigned Right Shift Operator (>>>), But padded with MSB (Most Significant Bits)
 3. Sign is preserved.
-4. Inserts zeroes at higher-order bits position. **Higher order bit position -->** 00000000 00000000 00000000 0000 0 1 1 0
+4. Inserts one at higher-order bits position. **Higher order bit position -->** __11111111__ 00000000 00000000 0000 0 1 1 0
 5. Same as division by powers of 2
+
     e.g. -2147483552 >> 4 ---> 2147483552 / 2^4 --> -134217722
   
 #### Explanation:
