@@ -94,3 +94,30 @@
           b &= false; // Assigns false value to b.
 2.  operand1 |= operand2
 3.  operand1 ^= operand2
+
+```
+public class BitwiseOperator {
+
+	public static void main(String[] args) {
+		int x = 1;
+		int y = 3;
+		
+		System.out.println("X & Y : " + (x & y)); //1
+		System.out.println("X | Y : " + (x | y)); //3
+		System.out.println("X ^ Y : " + (x ^ y)); //2
+		
+		System.out.println("X  : " + (~ x )); // -2
+		
+		char c1 = 'a'; 
+		char c2 = 'B';
+		
+		System.out.println("c1 | c2 : " + (c1|c2)); //99
+		
+		// Since bitwise operator only work on Integer types, following will not compile.
+		
+		double d1 = 3.14;
+		float f1 = 5.14f;
+		//System.out.println("d1 | d2: " + (d1 | f1)); // Compilation error: The operator | is undefined for the argument type(s) double, float
+	}
+}
+```
