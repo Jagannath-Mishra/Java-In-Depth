@@ -31,3 +31,31 @@ System.out.println("Dummy"); // this statement will execute evenif if condition 
 System.out.println("Dummy"); // this statement will execute evenif if condition pass or failed.
 
 ```
+
+## if-else statement
+
+It executes the if block if condition is true otherwise else block is executed.
+
+e.g.
+```
+if(condition){  
+//code if condition is true  
+}else{  
+//code if condition is false  
+}  
+```
+
+> Find out even and odd number?
+
+```
+public class IfElseExample {  
+public static void main(String[] args) {  
+    int number=13;  
+    if(number%2==0){  
+        System.out.println("even number");  
+    }else{  
+        System.out.println("odd number");  
+    }  
+}  
+}  
+```
