@@ -59,3 +59,83 @@ public static void main(String[] args) {
 }  
 }  
 ```
+
+## if-else-if ladder
+
+The if-else-if ladder statement executes one condition from multiple statements.
+
+```
+if(condition1){  
+//code to be executed if condition1 is true  
+}else if(condition2){  
+//code to be executed if condition2 is true  
+}  
+else if(condition3){  
+//code to be executed if condition3 is true  
+}  
+...  
+else{  
+//code to be executed if all the conditions are false  
+}  
+```
+> Here else block is optional block and if we mention else block then it should be last block.
+
+
+> Demo Program for if-else-if ladder
+
+```
+public class IfElseIfExample {  
+public static void main(String[] args) {  
+    int marks=65;  
+      
+    if(marks<50){  
+        System.out.println("fail");  
+    }  
+    else if(marks>=50 && marks<60){  
+        System.out.println("D grade");  
+    }  
+    else if(marks>=60 && marks<70){  
+        System.out.println("C grade");  
+    }  
+    else if(marks>=70 && marks<80){  
+        System.out.println("B grade");  
+    }  
+    else if(marks>=80 && marks<90){  
+        System.out.println("A grade");  
+    }else if(marks>=90 && marks<100){  
+        System.out.println("A+ grade");  
+    }else{  
+        System.out.println("Invalid!");  
+    }  
+}  
+}  
+```
+## nested if statement
+
+It's possible to have if..else statements inside a if..else statement in Java. It's called nested if...else statement.
+
+Here's a program to find largest of 3 numbers:
+```
+class Number {
+    public static void main(String[] args) {
+
+        Double n1 = -1.0, n2 = 4.5, n3 = -5.3, largestNumber;
+
+        if (n1 >= n2) {
+            if (n1 >= n3) {
+                largestNumber = n1;
+            } else {
+                largestNumber = n3;
+            }
+        } else {
+            if (n2 >= n3) {
+                largestNumber = n2;
+            } else {
+                largestNumber = n3;
+            }
+        }
+
+        System.out.println("Largest number is " + largestNumber);
+    }
+}
+```
