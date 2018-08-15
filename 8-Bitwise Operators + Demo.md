@@ -77,4 +77,20 @@
     11111111 11111111 11111111 111111 1 0 (Result)
 > As you can see the all  digita 1(x)  = 0 and 0(x)  = 1 (**where true = 1 & false = 0**)
 
+## Non Short Circuit Operators
 
+1. & and | operator are refered as non short circuit Operator.
+   i.e. This operator force to check both the operands (right operand always evaluated even if left operand evaluated to false)
+2. Always check both side of the operand. 
+
+
+## Compound Bitwise Assignment
+
+1.  operand1 = operand1 & operand2
+
+    i.e. operand1 &= operand2 (**Compound way to write bitwise operator**)
+    
+    e.g., boolean b = true;
+          b &= false; // Assigns false value to b.
+2.  operand1 |= operand2
+3.  operand1 ^= operand2
