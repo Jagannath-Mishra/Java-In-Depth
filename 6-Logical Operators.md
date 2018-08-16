@@ -1,6 +1,6 @@
 # Logical Operators
 
-Logical operator are used to test multipel condition. 
+Logical operator are used to test multiple condition. 
 
 e.g. 
 ```
