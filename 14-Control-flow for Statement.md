@@ -28,3 +28,44 @@ A for is tipically used to iterate or loop over elements of an array or similar 
       System.out.println(iarr[i]);
       }
     ```
+## Initialization ~ Declaration Statement
+
+  - for(int i = 0 ; ; ) // Valid Declaration
+  - for(int i = 0, j = 1 ; ; ) // Valid Declaration
+  - for(int i = 0, int j = 0 ; ; ) // **In-Valid Declaration**
+  - for(int i = 1, double d = 1.0 ; ; )  // **In-Valid Declaration**
+  - for(i++;;) // Valid
+  - for(i = 1, double d = 1.0 ; ; )// **In-Valid Declaration**
+  - for(System.out.println(i);;) // Valid
+  - for(System.out.println(i),i++;;) // Valid
+  
+## Condition ~ Expression
+
+  - Must be evalute to boolean value.
+  - This statement is optional 
+    - If Omitted, a true is assumed by default. i.e. infinite loop
+    
+      ```
+      for(int i =0; ; i++){
+      // Infinite loop as condition statement is omitted.
+      }
+      ```
+  - In condition expression we can only provide boolean statement, no other datatype other than boolean is accepted. 
+    e.g.
+      ```
+      for(int i =0; 1 ; i++){
+      // 1 is a int value so it will throw compile time error
+      }
+      
+       for(int i =0; true ; i++){
+      // true is a boolean value so it will accepted.
+      }
+      ```
+  ## Expression ~ Increment/Decrement List
+  
+  - We can have list of comma-separated expression statements.
+  
+    e.g. 
+      ```
+        for(int = 0; i<arr.length; System.out.println(arr[i]),i++);
+      ```
