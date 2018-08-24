@@ -31,3 +31,35 @@
     }
   }
   ```
+# Invalid Lebeled Continue Statement
+
+  e.g.
+  ```
+  x:if(){
+   for(){
+    for(){
+      continue x; // invalid as continue is only applicable for loop statement.
+    }
+  }
+  }
+  ```
+  
+ ## DEMO 
+ 
+ ```
+ static void labeledContinue() {
+	    System.out.println("\nInside labeledContinue ...");
+	    int num = 0;
+		
+	    outermost: for (int i = 0; i < 10; i++) {
+	        for (int j = 0; j < 10; j++) {    
+	            if (i == 5 && j == 5) {
+	                continue outermost;
+	            }
+	            num++;
+	        }
+	    }
+		
+	    System.out.println("num: " + num); // prints 55		
+    }
+ ```
