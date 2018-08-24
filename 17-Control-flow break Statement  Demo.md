@@ -42,4 +42,20 @@
       break; //  compile time error;
       }
       ```
+  # Lebeled break Statements
+  
+  - When we want to exist from outter most loop instade of innermost loop then we must use lebeled break statement. 
+  - lebel: block statement.
+  ### What is block statement.
+      1. 0 or more statement in curly braces.
+      2. e.g. control-flow statements, initilizers
+         ```
+         if(){ // block 1
+          }else{ // block 2
+          }
+        
+        ```
+      3. Statements are executed sequentially.
+      4. Can be nested.
+      
     
