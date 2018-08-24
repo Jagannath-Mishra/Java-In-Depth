@@ -58,4 +58,23 @@
       3. Statements are executed sequentially.
       4. Can be nested.
       
+   ## Valid break statement.
+   - Example - 1
+    ```
+    x: if(){
+      break x ;
+    }
+    ```
+    - Example - 2
     
+    ```
+   outermost: for (int i = 0; i < 10; i++){
+        for (int j = 0; j < 10;  j++{
+          if (i == 5 && j == 5){
+            break outermost;
+          }
+          num++;
+        }
+    }
+   System.out.print("num: "+num);// num : 55
+    ```
