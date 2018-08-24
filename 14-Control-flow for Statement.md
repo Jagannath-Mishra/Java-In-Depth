@@ -68,4 +68,7 @@ A for is tipically used to iterate or loop over elements of an array or similar 
     e.g. 
       ```
         for(int = 0; i<arr.length; System.out.println(arr[i]),i++);
+        
+        //More compact way :
+        for(int = 0; i<arr.length; System.out.println(arr[i++]));
       ```
