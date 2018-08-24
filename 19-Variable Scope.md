@@ -73,3 +73,30 @@
     x++; // invalid 
     }
     ```
+# Exercies - 1
+
+```
+class VariableScope {
+	int x = 5;
+	int y = x + 1;
+	int z = w + 1; // illegal
+
+	void foo(int a) {
+		int x = 0;
+		int k = x; // (Q2) What value is k assigned = 0
+		if (k == 0) {
+			int m = -1;
+		}
+		k = m; // (Q3) illegal
+		bar();
+	}
+
+	void bar() {
+		int b = k; // (Q4) illegal
+		int c = w; // (Q5) legal as class level variable
+	}
+
+	int w = 5;
+}
+
+```
