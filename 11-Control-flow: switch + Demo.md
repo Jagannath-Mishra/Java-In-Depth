@@ -114,3 +114,14 @@ default:// This should not be a last block and can have break statement.
 			
    
    ```
+   
+   > Note: Its a good practics to use always use break statement even if in last statement also.
+   
+   ## When is switch infeasible?
+   
+   -	More than one condition to test.
+   -	Tests other than equality e.g. month >= 3.
+   -	Switch expressioon is other than int, string and enum.
+   -	A case label restriction applied.
+   
+   
