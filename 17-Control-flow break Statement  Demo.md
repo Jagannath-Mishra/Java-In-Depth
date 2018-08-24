@@ -58,7 +58,7 @@
       3. Statements are executed sequentially.
       4. Can be nested.
       
-   ## Valid break statement.
+   ## Valid lebeled-break statement.
    - Example - 1
     ```
     x: if(){
@@ -78,3 +78,19 @@
     }
    System.out.print("num: "+num);// num : 55
     ```
+  ## In-valid lebeled-break statement.
+  ```
+  lebel1: for(){
+    for(){
+      break lebel1; // Accepted  
+    }
+  }
+  
+  
+  lebel2: for(){
+    for(){
+      break lebel1; // compiler error as lebel1 is not in scope.
+    }
+  }
+  ```
+  
