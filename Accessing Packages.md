@@ -35,3 +35,7 @@ ArrayList list = new ArrayList();
 - Import multiple classes
   - Separate explicit import
   - \* import ( or Import-On-Demand) 
+    - \* import
+     - This Imports all the classes in a packages 
+     - e.g. `import java.util.*;`
+> \* import is a shortcut for importing multiple classes as you were having just a single import statement instead
