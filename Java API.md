@@ -34,5 +34,11 @@
   - Core( Apache Commons, Google Guava)
   - Web Framework (Spring)
 
-### Item 47 from Effective Java ( Know and use the libraries )
+## Item 47 from Effective Java ( Know and use the libraries )
+
+  1. Focus on writing new logic
+  2. APIs improve performance over time.
+  3. Gain new functionality too. 
+  
+ >   So Try to read the API Documentation for all the classes to be covered in the course.
 
