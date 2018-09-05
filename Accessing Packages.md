@@ -48,10 +48,15 @@ ArrayList list = new ArrayList();
 - Better clarity with explicit import.
 - Explicit import seems to be preferred.
 
-## Fully - Qualified Class Name
+# Fully - Qualified Class Name
 
 -  Alternative to import 
       - java.til.ArrayList list =  new java.util.ArrayList();
+- Required if using both java.util.Date and java.sql.Date
 
+Example:
 
+```
+
+```
 
