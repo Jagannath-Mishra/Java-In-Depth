@@ -38,4 +38,20 @@ ArrayList list = new ArrayList();
     - \* import
      - This Imports all the classes in a packages 
      - e.g. `import java.util.*;`
-> \* import is a shortcut for importing multiple classes as you were having just a single import statement instead
+> \* import is a shortcut for importing multiple classes as you were having just a single import statement instead.
+
+# Explicit import or \* import?
+- To import multiple classes from the same package we need to use either start import or expensive imports.
+
+> So one question would be Is there any recommendation among the two options one issue it's not important.
+- \* import can break code
+- Better clarity with explicit import.
+- Explicit import seems to be preferred.
+
+## Fully - Qualified Class Name
+
+-  Alternative to import 
+      - java.til.ArrayList list =  new java.util.ArrayList();
+
+
+
