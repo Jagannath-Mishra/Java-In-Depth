@@ -23,5 +23,16 @@
   - java.net ~ Networking related task like download and upload.
   - java.sql ~ Databases
   
+> For more package and API information refer : https://docs.oracle.com/javase/8/docs/api/
 
+
+## 3rd Party APIs
+  - Big Data ( apache Hadoop)
+  - Data Mining (Weka, Apache Mahout)
+  - Database (Hibernate) | Search (Apache Solr)
+  - Parsing ( JDOM, Jackson, Google gson)
+  - Core( Apache Commons, Google Guava)
+  - Web Framework (Spring)
+
+### Item 47 from Effective Java ( Know and use the libraries )
 
