@@ -95,3 +95,10 @@ java.sql.Date date2;
  import java.sql.Date; // Gives Compilation error
  ```
  
+ ## Any Side affects in using imports ?
+ 
+ -  An answer is No.
+ -  You can have as many important statements as you want and you may never even use those classes and it will not have any effect.
+ -  Similarly an import statement does not affect that runtime performance too it simply saves you from typing the fully qulified name of the class.
+ 
+ 
