@@ -100,5 +100,8 @@ java.sql.Date date2;
  -  An answer is No.
  -  You can have as many important statements as you want and you may never even use those classes and it will not have any effect.
  -  Similarly an import statement does not affect that runtime performance too it simply saves you from typing the fully qulified name of the class.
+ - However on you compile your code the compiler simplly replaces the simple class names with the corresponding fully qualified class name.
+ 
+ > java.lang packed which is fundamental to java is imported by default, So you don't have to explicitly import any of the classes in this package.
  
  
