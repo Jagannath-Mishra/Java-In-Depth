@@ -54,9 +54,44 @@ ArrayList list = new ArrayList();
       - java.til.ArrayList list =  new java.util.ArrayList();
 - Required if using both java.util.Date and java.sql.Date
 
-Example:
+For example let's say we want to use both java.util.Date or java.sql.Date in the same class.
+
+This is a fairly uncommon scenario.But in this case you would have to use a fully qualified name for at least one of the classes.
+
+There are two solutions for this case.
+
+## Solution-1
+- Use only one explicit import
+```
+import java.util.Date;
+import java.sql.*;
+...
+
+Date date;// Using from import statement
+java.sql.Date date2; // this is fully qualifyed name. 
 
 ```
+> So basically using a simple name of the class will always reference the class from the explicit import. So explicit import takes president over start import in such a scenario.
+
+> Note: Just note that in this example we have only two classes but even if there were say many classes and 10 different packages and we want to use all of them in the same class then we can only explicitly import one of them and for the rest mind you would  have to use them using their fully qualified names.
+
+
+## Solution-2
+Use Only Fully-Qualified names
 
 ```
+import java.util.*;
+import jav.sql.*;
+...
+...
+java.util.Date date;
+java.sql.Date date2;
+```
+ > In this senario always use fully qualified name. 
+ 
+ > Note: Both import statement for date class gives a compiler error
+ ```
+ import java.util.Date;
+ import java.sql.Date; // Gives Compilation error
+ ```
  
